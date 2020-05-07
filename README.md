@@ -1,8 +1,10 @@
 # visad-mcidas-slim
 
 This is a fork of the [visad library](https://github.com/visad/visad) for use with the `cdm-mcidas` artifact from the netCDF-Java project.
-The intent is to produce a slim version the `edu.wisc.ssec.mcidas` package that contains what is needed for `the ucar.nc2.iosp.mcidas.AreaServiceProvider` and `ucar.nc2.iosp.mcidas.McIDASGridServiceProvider` IOSPs.
-These classes use no third party dependencies.
+The intent is to produce a build-tool consumable (i.e. maven artifact) slim dependency of the `edu.wisc.ssec.mcidas` package that contains what is needed for `the ucar.nc2.iosp.mcidas.AreaServiceProvider` and `ucar.nc2.iosp.mcidas.McIDASGridServiceProvider` IOSPs.
+No new development will be done in this repository.
+Any fixes will be made upstream and what is here will solely be a reflection, with very minor changes, of the mainline `edu.wisc.ssec.mcidas` classes.
+These classes do not rely on any third party dependencies.
 
 The following class was removed from the `edu.wisc.ssec.mcidas` package:
 * `GridDirectoryList.java`
