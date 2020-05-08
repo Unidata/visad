@@ -23,14 +23,18 @@ The following classes from the `edu.wisc.ssec.mcidas` package were modified:
 
 This library is made available on the Unidata nexus artifacts server (`https://artifacts.unidata.ucar.edu/repository/unidata-releases/`) as a Maven artifact with the following coordinates:
 
-groupId: `edu.wisc.ssec`
-artifactId: `visad-mcidas-slim`
+~~~
+groupId: edu.wisc.ssec
+artifactId: visad-mcidas-slim
+~~~
 
 To avoid namespace clashes, a second version of this artifact is published.
 The new artifact is the same as `visad-mcidas-slim`, but the `edu.wisc.ssec.mcidas` package is relocated to `ucar.mcidas`.
 
-groupId: `edu.wisc.ssec`
-artifactId: `visad-mcidas-slim-ucar-ns`
+~~~
+groupId: edu.wisc.ssec
+artifactId: visad-mcidas-slim-ucar-ns
+~~~
 
 As `visad` itself does not appear to be versioned, this artifact is versioned using the calendar date associated with the build of the artifact and has the form `yyyyMMdd`.
 
@@ -38,5 +42,5 @@ As the case with `visad`, this library is released under the terms of the GNU Li
 
 ## Release History
 
-Release 20200507 :  Based on visad commit [b01355c](https://github.com/visad/visad/commit/b01355c650768ce6459d271df82fd88588c22ead)
-Release 20200507-2 :  Same as release 20200507, but includes a new artifact with the `edu.wisc.ssec.mcidas` package relocated to `ucar.mcidas`.
+* Release 20200507 :  Based on visad commit [b01355c](https://github.com/visad/visad/commit/b01355c650768ce6459d271df82fd88588c22ead)
+* Release 20200507-2 :  Same as release 20200507, but includes a new artifact (`visad-mcidas-slim-ucar-ns`) with the `edu.wisc.ssec.mcidas` package relocated to `ucar.mcidas`.
