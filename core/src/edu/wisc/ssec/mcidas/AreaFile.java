@@ -354,7 +354,13 @@ public class AreaFile implements java.io.Serializable {
     }
     fileok = true;
     position = 0;
-    readMetaData();
+
+    try {
+      readMetaData();
+    } catch (AreaFileException e) {
+      close();
+      throw e;
+    }
   }
 
   /**
