@@ -44,3 +44,4 @@ As the case with `visad`, this library is released under the terms of the GNU Li
 
 * Release 20200507 :  Based on visad commit [b01355c](https://github.com/visad/visad/commit/b01355c650768ce6459d271df82fd88588c22ead)
 * Release 20200507-2 :  Same as release 20200507, but includes a new artifact (`visad-mcidas-slim-ucar-ns`) with the `edu.wisc.ssec.mcidas` package relocated to `ucar.mcidas`.
+* Release 20231121 : Fixes leaked resource bug
